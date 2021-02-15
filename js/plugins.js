@@ -1,4 +1,12 @@
 /* global $,  jquery, alert */
+//setting list
+document.querySelector(".fa-cog").onclick = function(){
+	//Fa-Spin Rotation it self
+	this.classList.toggle("fa-spin");
+	//Open Setting Manu
+	document.querySelector(".setting-box").classList.toggle("open");
+}; 
+
 //select landing page
 let landingPage = document.querySelector(".landing-page");
 
