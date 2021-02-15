@@ -1,15 +1,29 @@
-:root {
-	--main-color: #FF9800;
-}
+:root {--main-color: #FF9800;}
 /*Start Global*/
-body{
-	height: 1000px;
-	margin: 0px;
-	padding: 0px;
-	font-family: 'Cairo', sans-serif;
+.setting-box{
+	position: fixed;
+	top: 0;
+	left: -200;
+	width: 200px;
+	min-height: 100vh;
+	background-color: #FFF;
+	z-index: 10000;
+	transition: .3s;
 }
+.setting-box .fa-cog{
+	position: absolute;	
+	background-color: #FFF;
+	right: -30;
+	top: 100;
+	width: 50px;
+	padding: 8px;
+	text-align: center;
+}
+.setting-box .settings-content{
+	
+}
+body{font-family: 'Cairo', sans-serif;}
 /*End Global*/
-
 /*Start Landing Page*/
 .overlay{
 	background-color: rgba(0,0,0,0.6);
@@ -32,26 +46,10 @@ body{
 	color: #FFF;
 	display: flex;
 }
-.header-area .logo{
-	position: fixed;
-	padding: 10px;
-	font-weight: bold;
-}
-.header-area ul{
-	padding-top: 10px;
-	width: 100%;
-	text-align: right;
-}
-.header-area ul li{
-	display: inline-block;
-	list-style: none;
-	margin-right: 5px;
-}
-.header-area ul li a {
-	color: #FFF;
-	transition: .2s;
-	text-decoration: none;
-}
+.header-area .logo{position: fixed;padding: 10px;font-weight: bold;}
+.header-area ul{padding-top: 10px;width: 100%;text-align: right;}
+.header-area ul li{display: inline-block;list-style: none;margin-right: 5px;}
+.header-area ul li a {color: #FFF;transition: .2s;text-decoration: none;}
 .header-area ul li a:hover,
 .header-area ul li a.active{
 	color: var(--main-color);
@@ -79,13 +77,7 @@ body{
 	z-index: 2;
 	text-align: center;
 }
-.introduction-text span{
-	color: var(--main-color);
-}
-.introduction-text p {
-	text-height: 5px;
-	font-size: 18px;
-	color: #fff;
-}
+.introduction-text span{color: var(--main-color);}
+.introduction-text p {text-height: 5px;font-size: 18px;color: #fff;}
 /* End Introduction Text*/
 /*End Landing Page*/
