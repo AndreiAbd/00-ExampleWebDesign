@@ -34,12 +34,34 @@
 	padding-top: 10px;
 	text-height: 5px;
 }
+.setting-box .setting-content ul li{
+	transition: .3s;
+}
+.setting-box .setting-content ul li:hover{
+	background-color: var(--main-color);
+	padding-left: 4px;
+	color: #000;
+}
 .setting-box .selecting-area{
 	background-color: #333;
 	width: 100%;
 	color: var(--main-color);
 	padding: 5px;
 	font-weight: bold;
+}
+.setting-box .selecting-area lable{
+	font-weight: bold;
+}
+.setting-box .selecting-area > select{
+	color: #FFF;
+	transition: .3s;
+	margin-top: 5px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid var(--main-color);
+}
+.setting-box .selecting-area > select:hover{
+	background-color: var(--main-color);
+	color: #000;
 }
 body{font-family: 'Cairo', sans-serif;}
 /*End Global*/
