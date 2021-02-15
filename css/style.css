@@ -3,8 +3,8 @@
 .setting-box{
 	position: fixed;
 	top: 0px;
-	left: -200px;
-	width: 200px;
+	left: -150px;
+	width: 150px;
 	min-height: 100vh;
 	background-color: rgba(3, 3, 3, 0.65);
 	z-index: 10000;
@@ -23,6 +23,18 @@
 }
 .setting-box .setting-content{color: #FFF;}
 .setting-box .setting-content .content-header{
+	background-color: #333;
+	width: 100%;
+	color: var(--main-color);
+	padding: 5px;
+	font-weight: bold;
+}
+.setting-box .setting-content ul{
+	list-style: none;
+	padding-top: 10px;
+	text-height: 5px;
+}
+.setting-box .selecting-area{
 	background-color: #333;
 	width: 100%;
 	color: var(--main-color);
