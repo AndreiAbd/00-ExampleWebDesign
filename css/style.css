@@ -1,5 +1,12 @@
 :root {--main-color: #FF9800;}
 /*Start Global*/
+*{
+	box-sizing: broder-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing : border-box;
+}
 .setting-box{
 	position: fixed;
 	top: 0px;
@@ -21,47 +28,72 @@
 	cursor: pointer;
 	color: var(--main-color);
 }
-.setting-box .setting-content{color: #FFF;}
-.setting-box .setting-content .content-header{
+.setting-box .option-box ul{
+	list-style: none;
+	text-align: center;
+}
+.setting-box .option-box ul li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: .5;
+	display: inline-block;
+}
+.setting-box .option-box ul li:hover{
+	opacity: 1;
+}
+.setting-box .option-box ul li:first-child{
+	background-color: #FF9800;
+}
+.setting-box .option-box ul li:nth-child(2){
+	background-color: #E91E63;
+}
+.setting-box .option-box ul li:nth-child(3){
+	background-color: #009688;
+}
+.setting-box .setting-container{color: #FFF;}
+.setting-box .setting-container .content-header{
 	background-color: #333;
 	width: 100%;
 	color: var(--main-color);
 	padding: 5px;
 	font-weight: bold;
+	font-size: 14px;
 }
-.setting-box .setting-content ul{
+.setting-box .setting-container ul{
 	list-style: none;
 	padding-top: 10px;
 	text-height: 5px;
 }
-.setting-box .setting-content ul li{
+.setting-box .setting-container ul li{
 	transition: .3s;
 }
-.setting-box .setting-content ul li:hover{
+.setting-box .setting-container ul li.active,
+.setting-box .setting-container ul li:hover{
 	background-color: var(--main-color);
 	padding-left: 4px;
 	color: #000;
 }
-.setting-box .selecting-area{
+.setting-box .option-box .select-option{
+	padding-left: 60px;
+}
+.setting-box .option-box .yes,
+.setting-box .option-box .no{
 	background-color: #333;
-	width: 100%;
-	color: var(--main-color);
-	padding: 5px;
-	font-weight: bold;
-}
-.setting-box .selecting-area lable{
-	font-weight: bold;
-}
-.setting-box .selecting-area > select{
 	color: #FFF;
-	transition: .3s;
+	border-radius: 2px;
+	width: 30px;
 	margin-top: 5px;
-	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid var(--main-color);
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	transition: .3s;
 }
-.setting-box .selecting-area > select:hover{
+.setting-box .option-box .yes:hover,
+.setting-box .option-box .no:hover{
 	background-color: var(--main-color);
-	color: #000;
+	padding: 3px;
 }
 body{font-family: 'Cairo', sans-serif;}
 /*End Global*/
