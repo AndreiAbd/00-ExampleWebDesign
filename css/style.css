@@ -80,7 +80,7 @@
 }
 .setting-box .option-box .yes,
 .setting-box .option-box .no{
-	background-color: #333;
+	background-color: var(--main-color);
 	color: #FFF;
 	border-radius: 2px;
 	width: 30px;
@@ -89,11 +89,17 @@
 	text-align: center;
 	cursor: pointer;
 	transition: .3s;
+	opacity: .5;
 }
 .setting-box .option-box .yes:hover,
 .setting-box .option-box .no:hover{
 	background-color: var(--main-color);
 	padding: 3px;
+	opacity: 1;
+}
+.setting-box .option-box .select-option span.active {
+	background-color: var(--main-color);
+	opacity: 1;
 }
 body{font-family: 'Cairo', sans-serif;}
 /*End Global*/
